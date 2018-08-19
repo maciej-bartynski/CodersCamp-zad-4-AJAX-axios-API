@@ -7,7 +7,7 @@ var extractPlugin = new ExtractTextPlugin({
 module.exports = {
     entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname, 'docs'),
+        path: path.resolve(__dirname, 'build'),
         filename: 'bundle.js'
         //publicPath: '/build'
     },

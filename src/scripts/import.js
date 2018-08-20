@@ -66,7 +66,7 @@ export class GetData {
     }
     dataSet(string) {
         var its = this;
-        axios.get('./usersposts.json')
+        axios.get('https://api.myjson.com/bins/xr9bw')
             .then(function (response) {
                 let lotOfData = response.data;
                 let pictureURL = lotOfData[its.iter]['picture'];

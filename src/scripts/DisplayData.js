@@ -7,7 +7,7 @@ export class DisplayData {
         this.article = document.querySelectorAll('.sn001_container2_postwrapper')[this.i],
         this.author = this.article.querySelector('.sn001_container2_post_intro_head_author'),
         this.date = this.article.querySelector('.sn001_container2_post_intro_head_date'),
-        this.photo = this.article.querySelector('.sn001_container2_post_image .imag'),
+        this.photo = this.article.querySelector('.sn001_container2_post_image .sn001_imag'),
         this.post = this.article.querySelector('.sn001_container2_post_intro_body_paragraph'),
         this.tagContainer = this.article.querySelector('.sn001_container2_post_intro_head_tags'),
         this.tags = this.tagContainer.querySelectorAll('.sn001_hashtag')

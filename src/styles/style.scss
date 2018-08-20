@@ -8,6 +8,7 @@ section {
     font-family: sans-serif;
     box-sizing: border-box;
     display: grid;
+    padding: 1%;
     grid-template-columns: 100%;
     grid-template-rows: auto auto;
     grid-row-gap: 10px;
@@ -40,6 +41,9 @@ section {
     border: $lightbasic 2px solid;
     @include shadow();
     padding-left: 1em;
+    &:focus {
+        border: $lightblue 2px solid;
+    }
 }
 
 .sn001_container1_searchbutton {
@@ -54,6 +58,9 @@ section {
     cursor: pointer;
     user-select: none;
     white-space: nowrap;
+    &:hover {
+        opacity: 0.7;
+    }
 }
 
 /*post*/
@@ -62,7 +69,7 @@ section {
     box-sizing: border-box;
     width: 100%;
     display: none;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
     grid-template-columns: 100%;
     grid-row-gap: 10px;
     padding: 1em 5%;
@@ -73,7 +80,19 @@ section {
         display: grid;
     }
 }
-
+.sn001_container2_controlpanel{
+    background-color: $lightblue;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    color: gray;
+    width: 100%;
+    padding: 5px 0;
+    cursor: pointer;
+    &:hover {
+        opacity:0.7;
+    }
+}
 .sn001_container2_postwrapper{
     box-sizing: border-box;
     background-color: $lightblue;

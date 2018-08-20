@@ -1,1 +1,0 @@
-pobierane z api.myjson
